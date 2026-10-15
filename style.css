@@ -1,0 +1,38 @@
+:root{--bg:#f4f7f6;--ink:#1c2a29;--muted:#55635f;--line:#c9d4d0;--accent:#500000;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141b1a;--ink:#e6ecea;--muted:#9fb0ab;--line:#2f3d3a;--accent:#e08a8a;--card:#1c2524}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+a{color:var(--accent)}
+img{max-width:100%;height:auto}
+
+/* Menu */
+nav{border-bottom:2px solid var(--accent);background:var(--card)}
+nav ul{list-style:none;margin:0 auto;padding:14px 20px;max-width:800px;display:flex;flex-wrap:wrap;gap:20px}
+nav a{text-decoration:none;font-weight:bold}
+nav a[aria-current="page"]{text-decoration:underline}
+
+/* Layout */
+main{max-width:800px;margin:auto;padding:32px 20px}
+h1{font-size:clamp(2rem,7vw,3rem);line-height:1.1;margin:0 0 8px}
+h2{color:var(--accent);margin:40px 0 12px}
+h3{margin:20px 0 4px}
+.headline{color:var(--muted);font-size:1.15rem;margin:0}
+
+/* Project cards */
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px}
+.card h3{margin-top:0}
+.card p{color:var(--muted);margin:0 0 12px}
+
+/* Map and figures */
+.map{height:340px;border:1px solid var(--line);border-radius:6px;margin:12px 0}
+figure{margin:16px 0}
+figcaption{font-size:.85rem;color:var(--muted)}
+
+/* Resume */
+.resume-item{margin-bottom:20px}
+.resume-item p{margin:2px 0}
+.button{display:inline-block;padding:10px 16px;border:2px solid var(--accent);border-radius:6px;text-decoration:none;font-weight:bold}
+
+/* Footer */
+footer{border-top:1px solid var(--line);text-align:center;padding:24px 20px;color:var(--muted);font-size:.9rem}
